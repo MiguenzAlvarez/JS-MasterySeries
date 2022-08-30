@@ -1,55 +1,75 @@
-//VARIABLES:
-//let name  = 'Mosh'; console.log(name);
-//let firstName = 'Mosh';
-//CONSTANTS:
-//(const no se puede cambiar) let interestRate = 0.3;
-//interestRate = 1;
-//console.log(interestRate);
-//PRIMITIVE TYPES:
-//let name = 'Mosh'; //String literal
-//let age = 30; //Number Literal
-//let isApproved = true; //Bollean Literal
-//let firstName = undefined;
-//let selectedColor = null; //clear variable
-//OBJECTS:
-//let person = {name: 'Mosh', age: 30}
-//Dot Notation: person.name = 'John';
-//Bracket Notation: let selection = 'name'; person[selection] = 'Mary';
-//console.log(person.name);
-//ARRAYS:
-//let selectedColor = ['red', 'blue'];
-//selectedColor[2] = 1;
-//console.log(selectedColor.length);
-//FUNTIONS:
-//Perfoming a task
-//function greet(name, lastName) {console.log('Hello' + name + ' ' + lastName)}
-//greet('John', 'Smith');
-//Calcuating a value
-//function square(number) {return number * number;}
-//console.log(square(2))
-//console.log('Hello World');
+//BASICS
 
-//ARITHMETIC OPERATORS
-//let x = 10;
-//let y = 3;
-//console.log(x + y);
-//console.log(x - y);
-//console.log(x * y);
-//console.log(x / y);
-//console.log(x % y);
-//console.log(x ** y);
-//Increment (++): console.log(x++); console.log(x);
-//Decrement(--): console.log(--x);
-//ASIGMENT OPERATORS: let x = 10; x += 5;
-//COMPARISON OPERATORS: let x = 1;
-//Relational
-//console.log(x > 0);
-//console.log(x >= 1);
-//console.log(x < 1);
-//console.log(x <= 1);
-//Equality:
-//console.log(x === 1); Strict Equality (type & value)
-//console.log(x !== 1); Lose Equality (value)
+/*VARIABLES:
+let name  = 'Mosh'; console.log(name);
+let firstName = 'Mosh';*/
+
+/*CONSTANTS:
+(const no se puede cambiar) let interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);*/
+
+/*PRIMITIVE TYPES:
+let name = 'Mosh'; //String literal
+let age = 30; //Number Literal
+let isApproved = true; //Bollean Literal
+let firstName = undefined;
+let selectedColor = null; //clear variable*/
+
+/*OBJECTS:
+let person = {name: 'Mosh', age: 30}
+Dot Notation: person.name = 'John';
+Bracket Notation: let selection = 'name'; person[selection] = 'Mary';
+console.log(person.name);*/
+
+/*ARRAYS:
+let selectedColor = ['red', 'blue'];
+selectedColor[2] = 1;
+console.log(selectedColor.length);*/
+
+/*FUNTIONS:
+Perfoming a task *type of function*
+function greet(name, lastName) {console.log('Hello' + name + ' ' + lastName)}
+greet('John', 'Smith');
+
+Calcuating a value *type of function*
+function square(number) {return number * number;}
+console.log(square(2))
+console.log('Hello World');*/
+//
+//
+//OPERATORS
+
+/*ARITHMETIC OPERATORS
+let x = 10;
+let y = 3;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+console.log(x ** y);
+Increment (++): console.log(x++); console.log(x);
+Decrement(--): console.log(--x);*/
+
+/*ASIGMENT OPERATORS: let x = 10; x += 5;*/
+
+/*COMPARISON OPERATORS: let x = 1;
+Relational
+console.log(x > 0);
+console.log(x >= 1);
+console.log(x < 1);
+console.log(x <= 1);*/
+
+/*EQUALITY OPERATORS:
+console.log(x === 1); Strict Equality (type & value)
+console.log(x !== 1); Lose Equality (value)*/
+
+/*TERNARY OPERATOR
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);*/
+
 /*LOGICAL AND (&&) return true if both operands are TRUE
 console.log(true && true);
 let highIncome = true;
@@ -72,7 +92,8 @@ console.log("applicationRefused", applicationRefused);
 
 Falsy (false values: undefined, null, 0, false, '', NaN)
 Anything that is not Falsy is Truthy*/
-
+//
+//
 //CONTROL FLOW
 
 /*IF/ELSE
