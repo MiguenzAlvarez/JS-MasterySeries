@@ -165,7 +165,8 @@ while (i <= 10) {
 //
 //
 //EXERCISES
-/*Return the max
+
+/*1- RETURN THE MAX OF TWO NUMBERS
 let number = max(1, 2);
 console.log(number);
 
@@ -181,43 +182,14 @@ function max(numberOne, numberTwo) {
   return numberOne > numberTwo ? numberOne : numberTwo;
 }*/
 
-/*Return true or false
+/*2- RETURN TRUE OR FALSE
 console.log(800, 400);
 function isLandScape(width, height) {
   return width > height;
 }*/
 
-/*Return odd or even
-showNumbers(10);
-
-function showNumbers(number) {
-  for (let i = 0; i <= number; i++) {
-    if (i % 2 === 0) console.log(i, "EVEN");
-    else console.log(i, "ODD");
-  }
-}
-
-//other way
-showNumbers(10);
-
-function showNumbers(number) {
-  for (let i = 0; i <= number; i++) {
-    const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
-    console.log(i, message);
-}
-}
-*/
-
-/*const array = [0, null, undefined, "", 2, 3, 4];
-console.log(countTruthy(array));
-
-function countTruthy(array) {
-  let count = 0;
-  for (let value of array) if (value) count++;
-  return count;
-}*/
-
-/*const output = fizzBuzz(3);
+/*3-
+const output = fizzBuzz(3);
  console.log(output);
 
  function fizzBuzz(input) {
@@ -235,7 +207,8 @@ function countTruthy(array) {
     return input;
 }*/
 
-/*const speeed = cheekSpeed(120);
+/*4- 
+const speeed = cheekSpeed(120);
 console.log(speeed);
 
 function cheekSpeed(speed) {
@@ -244,7 +217,38 @@ function cheekSpeed(speed) {
   if (speed) if (speed > 70) return 'Point:' + ' ' + (speed / 5 - 14);
 }*/
 
-/*const movie = {
+/*5- RETURN ODD OR EVEN
+showNumbers(10);
+
+function showNumbers(number) {
+  for (let i = 0; i <= number; i++) {
+    if (i % 2 === 0) console.log(i, "EVEN");
+    else console.log(i, "ODD");
+  }
+}
+
+//other way
+showNumbers(10);
+
+function showNumbers(number) {
+  for (let i = 0; i <= number; i++) {
+    const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+    console.log(i, message);
+}
+}*/
+
+/*6- COUNT TRUTHY
+const array = [0, null, undefined, "", 2, 3, 4];
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) if (value) count++;
+  return count;
+}*/
+
+/*7- STRING PROPERTIES
+const movie = {
   title: "a",
   releaseYear: 2018,
   rating: 4.5,
@@ -260,7 +264,9 @@ function showProperties(obj) {
     }
   }
 }*/
-/*console.log(sum(10));
+
+/*8- SUM OF MULTIPLES OF 3 AND 5
+console.log(sum(10));
 
 function esMultiploDe(n1, n2) {
   return n1 % n2 === 0;
@@ -280,7 +286,8 @@ function sum(limit) {
   return totalSum;
 }*/
 
-/*const marks = [80, 80, 50]; //total divido cantidad
+/*9-
+const marks = [80, 80, 50]; //total divido cantidad
  //average = 70
 
  //1-59:f
@@ -308,7 +315,8 @@ function calculateGrade(marks){
   return 'A';
 }*/
 
-/*showStars(5);
+/*10-
+showStars(5);
 
 function showStars(rows){
   for (let row = 1; row <= rows; row++) {
@@ -320,7 +328,8 @@ function showStars(rows){
   }
 }*/
 
-/*showPrimes(20);
+/*11-
+showPrimes(20);
 
 function showPrimes(limit){
   for (let number = 2; number <= limit; number++){
@@ -429,10 +438,66 @@ function increase(obj) {
 increase(obj);
 console.log(obj); (console: obj) = 11;*/
 
-/*ENUMERATING PROPERTIES OF AN OBJECT*/
+/*ENUMERATING PROPERTIES OF AN OBJECT
 const circle = {
   radius: 1,
   draw() {
     console.log("draw");
   },
 };
+//1 FOR_IN (bracket notation to get de the value of the key/propertie)
+for (let key in circle)
+console.log(key, circle[key]);
+//2 FOR_OF (object is not iterable but we have the Object method so we can get all the keys in our 'circle object' and return an array)
+for (let key of Object.keys(circle))
+console.log(key);
+//3 FOR _OF ( entries return each value pair as an array)
+for (let entry of Object.entries(circle))
+console.log(entry);
+//4 FOR_IN (you can see if a given property exists in a given object)
+if ('radius' in circle) console.log('yes');*/
+
+/*CLONING AN OBJECT
+const circle = { 
+  radius: 1,
+  draw() {
+    console.log('draw');
+  }
+};
+
+//1-
+const another = {};
+for (let key in circle)
+another[key] = circle[key];
+//2- more easy (and you can add values in {})
+const another = Object.assign({}, circle);
+//3- even more easy
+const another = {...circle};
+console.log(another);*/
+
+/*MATH JAVASCRIPT: 
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math*/
+
+/*STRING OBJECT: ('',"")
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String 
+//String primitive
+const message = 'hi';
+//String Object
+const another = new String('hi');*/
+
+/*TEMPLATE LITERALS (``)
+const another = //easier (we can add values with ${})
+`This is my
+'first' message`;
+//vs primitive
+const message = //complicated
+'This is my\n +
+'\'first\' message';*/
+
+/*DATE:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
+const now = new Date(); //time in the moment
+const date1 = new Date('May 11 2018 09:00');
+const date2 = new Date(2018, 4, 11, 9);
+
+now.setFullYear(2017);*/
