@@ -65,7 +65,7 @@ console.log(x <= 1);*/
 console.log(x === 1); Strict Equality (type & value)
 console.log(x !== 1); Lose Equality (value)*/
 
-/*TERNARY OPERATOR
+/*TERNARY OPERATOR:
 let points = 110;
 let type = points > 100 ? 'gold' : 'silver';
 console.log(type);*/
@@ -147,7 +147,7 @@ for (let key in person) console.log(key, person[key]);
 const colors = ["red", "green", "blue"];
 for (let index in colors) console.log(index, colors[index]);*/
 
-/*FOR-OF
+/*FOR-OF (arrays and maps)
 const colors = ["red", "green", "blue"];
 for (let color of colors) console.log(color);*/
 
@@ -162,8 +162,9 @@ while (i <= 10) {
     console.log(i);
     i++;
 }*/
-
-//EXERCISE
+//
+//
+//EXERCISES
 /*Return the max
 let number = max(1, 2);
 console.log(number);
@@ -335,3 +336,103 @@ function isPrime(number){
 
   return true;
 }*/
+//
+//
+//Camel Noation: oneTwoThree
+//Pascal Notation: OneTwoThree
+//
+//
+//OBJECTS
+
+/*BASICS
+const circle = {  //Object-oriented
+  radius: 1,
+  location: {
+    x: 1,
+    y: 1,
+  },
+  isVisible: true,
+  draw: function () {
+    console.log("draw");
+  }
+};
+circle.draw;      //Method*/
+
+/*FACTORY FUNCTIONS:
+function createCircle(radius) {
+  return {
+    radius, // <- = radius: radius,
+    draw() { // <- = draw: function ()
+      console.log("draw");
+    },
+  };
+}
+
+const circle1 = createCircle(1);
+console.log(circle1);
+const circle2 = createCircle(2);
+console.log(circle2);*/
+
+/*CONSTRUCTOR FUNCTION
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+const circle = new Circle(1);*/
+
+/*DYNAMIC NATURE OF OBJECTS
+const circle = {
+  radius: 1,
+};
+
+circle.color = "yellow"; //add properties
+circle.draw = function () {};
+
+delete circle.color; //delete properties
+delete circle.draw;
+
+console.log(circle);*/
+
+//5
+//6
+
+//VALUES TYPES: number, string, boolean, symbol, undefined, null
+//REFERENCE TYPES: object, function, array
+//Functions are objects too
+
+/*PRIMITIVES are copied by their VALUE
+let x = 10;
+let y = x;
+
+x = 20; (console: x = 20, y = 10)
+/
+/
+let number = 10;
+function increase(number){
+  number++;
+}
+increase(number);
+console.log(number); (console: number = 10)*/
+
+/*OBJECTS are copied by their REFERENCE
+let x = { value: 10};
+let y = x;
+
+x.value = 20; (console: x = 20, y = 20)
+/
+let obj = { value: 10);
+function increase(obj) {
+  obj.value++;
+}
+increase(obj);
+console.log(obj); (console: obj) = 11;*/
+
+/*ENUMERATING PROPERTIES OF AN OBJECT*/
+const circle = {
+  radius: 1,
+  draw() {
+    console.log("draw");
+  },
+};
