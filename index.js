@@ -498,6 +498,96 @@ const message = //complicated
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
 const now = new Date(); //time in the moment
 const date1 = new Date('May 11 2018 09:00');
-const date2 = new Date(2018, 4, 11, 9);
+const date2 = new Date(2018, 4, 11, 9, 30);
 
 now.setFullYear(2017);*/
+//
+//
+//EXERCISE:
+
+/*1- ADDRESS OBJECT:
+let address = {
+  street: "a",
+  city: "b",
+  zipCode: "c",
+};
+/*function shownAddress(address) {
+  for (let key in address) console.log(key, address[key]);
+}
+
+shownAddress(address);*/
+
+/*2- FACTORY AND CONSTRUCTOR FUNCTION:
+//FACTORY
+function createAddressF(street, city, zipCode) {
+  return {
+    street,
+    city,
+    zipCode,
+  };
+}
+let address = createAddressF("a", "b", "c");
+
+console.log(address);
+
+//CONSTRUCTOR
+function CreateAddressC(street, city, zipCode) {
+  (this.street = street), (this.city = city), (this.zipCode = zipCode);
+}
+
+let address1 = new CreateAddressC("a", "b", "c");
+let address2 = new CreateAddressC("a", "b", "c");
+let address3 = address1; //point same object
+
+console.log(address1);*/
+
+/*3- OBJECT EQUALITY:
+function areEqual(address1, address2) {
+  return (
+    address1.street === address2.street &&
+    address1.city === address2.city &&
+    address1.zipCode === address2.zipCode
+  );
+}
+
+function areSame(address1, address2) {
+  return address1 === address2;
+}
+
+console.log(areEqual(address1, address2)); 
+console.log(areSame(address1, address2)); //they dont poin to the same object
+console.log(areSame(address1, address3)); //point same object*/
+
+/*4- BLOG POST OBJECT:
+let blog = {
+  tittle: "a",
+  body: "b",
+  author: "c",
+  views: 10,
+  comments: [{ author: "a", body: "b" }],
+  isLive: true,
+};
+
+console.log(blog);*/
+
+/*5- CONSTRUCTOR FUNCTION:
+function Post(tittle, body, author) {
+  this.tittle = tittle;
+  this.body = body;
+  this.author = author;
+  this.views = 0;
+  this.comments = [];
+  this.isLive = false;
+}
+
+let post = new Post("a", "b", "c");
+
+console.log(post);*/
+
+/*6- PRICE RANGE OBJECT:*/
+let priceRanges = [
+  { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+];
+let retaurants = [{ averagePerPerson: 5 }];
