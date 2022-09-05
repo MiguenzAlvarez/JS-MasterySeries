@@ -584,10 +584,54 @@ let post = new Post("a", "b", "c");
 
 console.log(post);*/
 
-/*6- PRICE RANGE OBJECT:*/
+/*6- PRICE RANGE OBJECT:
 let priceRanges = [
   { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
   { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
   { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
 ];
-let retaurants = [{ averagePerPerson: 5 }];
+let retaurants = [{ averagePerPerson: 5 }];*/
+//
+//
+/*ADDING ELEMENTS:
+const numbers = [3, 4];
+
+//end
+numbers.push(5, 6);
+
+//Beginning
+numbers.unshift(1, 2);
+
+//Middle
+numbers.splice(2, 0, 'a', 'b'); //(index number), delete numbers?, numbers to add)*/
+
+/*FINDING ELEMENTS (PRIMITIVES):
+const numbers = [1, 2, 3, 4];
+
+//return the index of that number, if it doesnt exist return -1
+numbers.indexOf()
+
+//return the las index of that number
+numbers.lastIndexOf()
+
+//return if the array includes that number
+numbers.includes()*/
+
+/*FINDING ELEMENTS (REFERENCE TYPES):
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+];
+
+// 
+courses.includes({ id: 1, name: 'a'})
+
+//
+const course = courses.find(function(course){
+    return course.name === 'a';
+});
+
+//
+const course = courses.findIndex(function(course){
+    return course.name === 'a';
+});*/
