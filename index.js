@@ -623,15 +623,69 @@ const courses = [
     { id: 2, name: 'b' },
 ];
 
-// 
+// NO
 courses.includes({ id: 1, name: 'a'})
 
-//
+//YES
 const course = courses.find(function(course){
     return course.name === 'a';
 });
 
-//
+//find index of
 const course = courses.findIndex(function(course){
     return course.name === 'a';
 });*/
+
+/*ARROW FUNCTIONS:
+
+//find element by reference more clean
+const courses = [
+  { id: 1, name: "a" },
+  { id: 2, name: "b" },
+];
+
+const course = course.find(course => course.name === 'a');
+console.log(course);*/
+
+/*REMOVING ELEMENTS:
+
+const numbers = [1, 2, 3, 4];
+
+//END
+const last = numbers.pop();
+console.log(numbers);
+console.log(last);
+
+//BEGINNING
+const first = numbers.shift();
+console.log(first);
+
+//MIDDLE
+numbers.splice(2, 1); //(index of the number, amount of numbers)
+console.log(numbers);*/
+
+/*EMPTYING AN ARRAY:
+
+let numbers = [1, 2, 3, 4];
+let another = numbers; //pointing to the old object
+
+//1-
+numbers = []; //pointing to a new object / works only if you have one array
+console.log(numbers);
+
+//2- works in all cases / best solution
+numbers.length = 0;
+console .log(numbers);
+console.log(another);
+
+//3- works in all cases
+numbers.splice(0, numbers.length);
+console.log(numbers);
+console.log(another);
+
+//4-
+while (numbers.length > 0)
+  numbers.pop();
+
+console.log(numbers);
+console.log(another);*/
