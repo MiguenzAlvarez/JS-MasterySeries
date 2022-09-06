@@ -689,3 +689,59 @@ while (numbers.length > 0)
 
 console.log(numbers);
 console.log(another);*/
+
+/*COMBINING AND SLICING ARRAYS: if the elements are primitives is copied by value
+if they are reference type, by their reference
+
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+//Combine two arrays
+const combined = first.concat(second);
+console.log(combined);
+
+//Slice
+const slice = combined.slice(2, 4); //(index number, finish number)
+console.log(slice);
+//Slice from index to the end
+const slice2 = combined.slice(2); //(only index)  
+//Slice, a copy of the array
+const slice3 = combined.slice(); //(empty because generates another array)*/
+
+/*The Spread Operator: combining with more flexibility
+
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+//combining
+const combined = [...first, 'a', ...second]; //you can add new elements
+
+//copy
+const copy = [...combined]; //copy with spread operator*/
+
+/*ITERATING AN ARRAY:
+
+const numbers = [1, 2, 3];
+
+//1-
+for (let number of numbers)
+ console.log(numbers);
+
+//2-
+numbers.forEach(number => console.log(numbers));
+numbers.forEach((number, index) => console.log(numbers, index));*/
+
+/*JOINING ARRAYS:
+
+//1-
+const numbers = [1, 2, 3];
+const joined = numbers.join(',');
+console.log(joined);
+
+//2-
+const message = "This is my first message";
+const parts = message.split(' ');
+console.log(parts);
+//3-
+const combined = parts.join('-');
+console.log(combined);*/
