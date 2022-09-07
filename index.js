@@ -593,6 +593,8 @@ let priceRanges = [
 let retaurants = [{ averagePerPerson: 5 }];*/
 //
 //
+//ARRAYS:
+
 /*ADDING ELEMENTS:
 const numbers = [3, 4];
 
@@ -745,3 +747,74 @@ console.log(parts);
 //3-
 const combined = parts.join('-');
 console.log(combined);*/
+
+/*SORTING ARRAYS:
+
+const numbers = [2, 3, 1];
+
+//sort
+numbers.sort();
+console.log(numbers);
+
+//reverse
+numbers.reverse();
+console.log(numbers);
+
+//object
+const courses = [
+  { id: 1, name: "Node.js" },
+  { id: 2, name: "JavaScript" },
+];
+
+courses.sort(function(a,b) {
+  //a < b => -1
+  //a > b => 1
+  //a === b => 0
+
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+})
+
+console.log(courses);
+
+//object with Upper and lower case
+
+const courses2 = [
+  { id: 1, name: "Node.js" },
+  { id: 2, name: "javaScript" },
+];
+
+courses.sort(function (a, b) {
+  //a < b => -1
+  //a > b => 1
+  //a === b => 0
+  const nameA = a.name.toUpperCase(); //we have toLowerCase too
+  const nameB = b.name.toUpperCase();
+
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
+
+console.log(courses2);*/
+
+/*TESTING THE ELEMENTS OF AN ARRAY:
+
+const numbers = [1, -1, 2, 3];
+
+//1- if we have one that is not positive stops
+const allPositive = numbers.every(function(value) {
+return value >= 0;
+});
+
+console.log(allPositive);
+
+//2- search if we have at least one positive
+const atLeastonePositive = numbers.some(function (value) {
+  return value >= 0;
+});
+
+console.log(atLeastonePositive);*/
+
+/*FILTERING AN ARRAY:*/
